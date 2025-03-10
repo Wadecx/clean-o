@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Avis = () => {
   return (
-    <section className="flex flex-col justify-center text-center mt-24">
+    <section className="flex flex-col justify-center text-center mt-24 mb-24">
       <h2 className="text-4xl text-primary font-medium">
         ILS ONT FAIT LE CHOIX DE{" "}
         <span className="text-secondary">L’EXCELLENCE</span> !

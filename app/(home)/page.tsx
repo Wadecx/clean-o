@@ -7,7 +7,7 @@ import { Promesse } from '@/containers/home/promesse';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '',
+  title: 'Menu',
   description: '',
 };
 

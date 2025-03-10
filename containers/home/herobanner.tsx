@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const Herobanner = () => {
   return (
-    <section className="uppercase flex flex-row rounded-3xl bg-third md:max-w-[95%] mx-auto mt-12 min-h-[700px] items-center justify-between">
+    <section className="uppercase flex flex-row rounded-3xl bg-third md:max-w-[95%] mx-auto mt-12 min-h-[600px] justify-between">
       <div className="flex flex-col ml-12 mt-12 mb-24">
-        <h1 className="uppercase md:text-4xl font-medium text-primary leading-1 ">
+      <h1 className="uppercase md:text-4xl font-medium text-primary leading-1 mb-8 mt-24 items-center">
           votre environnement
           <br /> professionnel, <br /> notre{" "}
           <span className="text-secondary">priorité absolue.</span>
@@ -24,9 +24,15 @@ export const Herobanner = () => {
         </div>
       </div>
 
-      <div className="flex relative top-[84px]">
-      <Image src="/assets/images/cleaning.png" alt="" width={800} height={0} className="mt-12"></Image>
-      </div>
+     <div className="flex items-end mr-12">
+             <Image
+               src="/assets/images/cleaning.png"
+               alt=""
+               width={700}
+               height={0}
+               className="mt-12 max-h-[600px]"
+             ></Image>
+           </div>
     </section>
   );
 };
