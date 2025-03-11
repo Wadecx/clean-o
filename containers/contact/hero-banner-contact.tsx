@@ -10,7 +10,7 @@ export const HerobannerContact = () => {
             <br /> professionnel ? <br />
             <span className="text-secondary">Contactez clean'o ! </span>
           </h1>
-          <div className="flex flex-col md:mt-4 items-center">
+          <div className="flex flex-col md:mt-4 items-center md:items-start">
             <Link
               href="/nos-services"
               className="mt-8 uppercase w-fit px-8 py-3 bg-secondary text-white rounded-xl font-bold shadow-lg transition duration-300 hover:shadow-xl"
