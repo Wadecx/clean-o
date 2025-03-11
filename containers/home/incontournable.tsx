@@ -11,13 +11,13 @@ export const Incontournable = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <section className="mt-24 mx-auto flex justify-center">
-      <div className="md:w-1/2 items-center justify-center mt-4">
-        <h2 className="text-4xl text-primary uppercase w-[80%] font-medium mb-4">
+    <section className="mt-24 mx-auto flex justify-center md:flex-row flex-col">
+      <div className="md:w-1/2 items-center mt-4 md:block flex flex-col justify-center ">
+        <h2 className="md:text-4xl text-3xl text-primary uppercase w-[80%] font-medium mb-4 md:text-start text-center">
           Pourquoi nous sommes le partenaire{" "}
           <span className="text-secondary">incontournable</span>?
         </h2>
-        <p className="text-primary mb-12 text-lg md:max-w-[55%]">
+        <p className="text-primary mb-12 text-lg md:max-w-[55%] md:mx-0 mx-auto md:text-start text-center">
           De nombreux avantages vous attendent avec Clean'o, votre expert, en
           nettoyage professionnel !
         </p>
@@ -55,7 +55,7 @@ export const Incontournable = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="mx-12 md:mx-0">
         <Image
           src="/assets/images/home/homme_menage.png"
           alt=""

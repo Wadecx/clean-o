@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return(
-    <section className="p-12 flex bg-secondary justify-evenly">
+    <section className="p-12 flex bg-secondary md:justify-evenly md:flex-row flex-col md:gap-0 gap-12">
       <div className="mt-12">
         <Image src="/assets/icons/cleano_footer.png" alt="" width={250} height={120}></Image>
         <p className="text-white mt-4">2025 - Tout droits réservés</p>

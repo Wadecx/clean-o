@@ -5,6 +5,7 @@ import { CleanoEtVous } from "@/containers/nos-services/Cleano-et-vous";
 import { HerobannerServices } from "@/containers/nos-services/herobanner-services";
 import { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "Nos Services",
   description: "",

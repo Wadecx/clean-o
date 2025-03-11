@@ -6,6 +6,7 @@ import { Locaux } from '@/containers/home/locaux-impecable';
 import { Promesse } from '@/containers/home/promesse';
 import { Metadata } from 'next';
 
+
 export const metadata: Metadata = {
   title: 'Menu',
   description: '',

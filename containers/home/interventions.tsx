@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const Interventions = () => {
     return(
-        <section className="flex w-[70%] justify-between mx-auto mt-24 items-center">
+        <section className="flex w-[70%] justify-between mx-auto mt-24 items-center mb-12 md:flex-row flex-col">
             <div className="flex flex-col gap-4 items-center text-center">
                     <Image src="/assets/images/home/c1.png" alt="" width={120} height={0} className=""></Image>
                     <h2 className="uppercase text-primary text-center text-xl font-bold">intervention <br/> rapide</h2>
