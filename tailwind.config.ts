@@ -27,15 +27,13 @@ const config: Config = {
         secondary: {
           DEFAULT: '#587e8d',
         },
-
         third: {
           DEFAULT: '#f2eeeb',
         },
-        
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'Montserrat'],
-        gotham: ['var(--font-gotham)',' Gotham'],
+        gotham: ['var(--font-gotham)', ' Gotham'],
       },
       keyframes: {
         heart: {
