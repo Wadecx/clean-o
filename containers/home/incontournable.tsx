@@ -15,7 +15,7 @@ export const Incontournable = () => {
   return (
     <Section
       size="9/10"
-      className="mt-24 mx-auto flex justify-center lg:flex-row flex-col"
+      className=" mx-auto flex justify-center lg:flex-row flex-col"
     >
       <div className="lg:w-1/2 items-center mt-4 lg:block flex flex-col justify-center ">
         <h2 className="lg:text-4xl text-3xl text-primary uppercase w-[80%] font-medium mb-4 lg:text-start text-center">
@@ -72,6 +72,7 @@ export const Incontournable = () => {
           alt=""
           width={600}
           height={0}
+          className="max-h-[560px]"
         ></Image>
       </div>
     </Section>

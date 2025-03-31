@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Interventions = () => {
   return (
-    <Section className="flex justify-evenly flex-col md:flex-row gap-12 md:gap-0">
+    <Section className="flex justify-evenly flex-col md:flex-row gap-12 md:gap-0 items-center">
       <AnimateContainer className="flex flex-col gap-4 items-center text-center">
         <Image
           src="/assets/images/home/c1.png"

@@ -5,17 +5,16 @@ import Link from 'next/link';
 
 export const Locaux = () => {
   return (
-    <Section className="flex items-center gap-12 flex-col 2xl:flex-row">
-      <div className="w-full h-full 2xl:w-2/5">
-        <AnimateContainer>
-          <Image
-            src="/assets/images/home/homme_vitre.png"
-            alt=""
-            width={600}
-            height={0}
-          />
-        </AnimateContainer>
-      </div>
+    <Section size='9/10' className="flex items-center flex-col xl:flex-row">
+      <div className="lg:w-1/2 lg:ml-24 md:mr-0 mx-12">
+              <Image
+                src="/assets/images/home/homme_vitre.png"
+                alt=""
+                width={600}
+                height={0}
+                className="relative left-15"
+              ></Image>
+            </div>
       <div className="flex-1 flex-col text-start">
         <AnimateContainer delay={0.2}>
           <h2 className="uppercase text-primary md:text-4xl text-2xl font-medium mb-12 mt-4 md:mt-0">
