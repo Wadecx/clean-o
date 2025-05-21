@@ -51,6 +51,7 @@ const Header = () => {
         initial="initial"
         viewport={{ once: true }}
         //@ts-expect-error
+        framer-motion prevent
         className="w-full absolute top-0 hidden lg:block z-50"
       >
         <nav className="max-w-9/10 mx-auto py-8 flex items-center justify-between mt-8">
