@@ -19,7 +19,7 @@ const LINKS: Link[] = [
     href: '/nos-services',
   },
   {
-    text: "NOUS DECOUVRIR",
+    text: 'NOUS DECOUVRIR',
     href: '/nous-decouvrir',
   },
 ];
@@ -50,8 +50,7 @@ const Header = () => {
         animate="visible"
         initial="initial"
         viewport={{ once: true }}
-        //@ts-expect-error
-        framer-motion prevent
+        //@ts-expect-error framer-motion prevent
         className="w-full absolute top-0 hidden lg:block z-50"
       >
         <nav className="max-w-9/10 mx-auto py-8 flex items-center justify-between mt-8">
@@ -71,7 +70,7 @@ const Header = () => {
                 quality={100}
                 priority
                 alt="Logo Cleano"
-                className='relative bottom-2'
+                className="relative bottom-2"
               />
             </Link>
           </motion.div>
@@ -137,7 +136,7 @@ const ResponsiveHeader = () => {
           initial="initial"
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          whileHover={{ scale: 0.90 }}
+          whileHover={{ scale: 0.9 }}
           //@ts-expect-error
           className="relative z-[999]"
         >
