@@ -1,17 +1,35 @@
+"use client";
 import { Section } from "@/components";
+import { useEffect } from "react";
 
 export const Tally = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    script.onload = () => {
+      // @ts-ignore
+      Tally.loadEmbeds();
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <Section size="9/10" className="flex justify-center py-8 bg-third rounded-3xl">
-      <div className="max-w-[80%] w-full min-h-max">
+    <Section className="mt-0 md:mt-0 mb-0 md:mb-0 md:pt-24 pt-0" size="full">
+      <div className="max-w-8/10 mx-auto 3xl:max-w-[1400px] rounded-xl p-4 bg-third">
         <iframe
-          src="https://tally.so/embed/3qv8k8?alignLeft=1&hideTitle=1&dynamicHeight=1"
+          data-tally-src="https://tally.so/embed/3qv8k8?alignLeft=1&hideTitle=1&dynamicHeight=1&transparentBackground=1"
           loading="lazy"
-          height="975"
           width="100%"
-          title="RÉSERVER VOTRE TABLE"
+          height="448"
+          title="CONTACT"
           className=""
-        />
+        ></iframe>
       </div>
     </Section>
   );
