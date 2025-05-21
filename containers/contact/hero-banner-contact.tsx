@@ -1,16 +1,21 @@
-import Link from "next/link";
+import { AnimateContainer } from "@/animations";
+import { Section } from "@/components";
 import Image from "next/image";
+import { Link } from 'next-view-transitions';
 
 export const HerobannerContact = () => {
   return (
-      <section className="uppercase flex flex-row rounded-3xl bg-third md:max-w-[95%] max-w-[90%] mx-auto md:mt-12 mt-[150px] md:min-h-[600px] justify-between">
-        <div className="flex flex-col md:ml-12 mt-12 mb-24">
-          <h1 className="uppercase md:text-4xl text-3xl md:text-start text-center md:items-start items-center font-medium text-primary leading-1 mb-8 mt-24 items-center">
-            Besoin d'un service de nettoyage
-            <br /> professionnel ? <br />
-            <span className="text-secondary">Contactez clean'o ! </span>
+    <Section size="9/10" className="mt-[150px] md:mt-[170px]">
+      <AnimateContainer className="flex items-center bg-third rounded-[60px] md:pl-24 py-24 justify-between overflow-hidden relative">
+        
+        {/* TEXTE */}
+        <div className="flex z-10 flex-col md:items-start md:text-start text-center w-full lg:w-[55%] xl:w-[50%] 2xl:w-[60%]">
+          <h1 className="uppercase md:text-5xl text-3xl font-medium text-primary leading-tight">
+            Besoin d'un services de nettoyage professionnel ?
+            <span className="text-secondary">Contactez Clean'o ! </span>
           </h1>
-          <div className="flex flex-col md:mt-4 items-center md:items-start">
+          
+          <div className="flex flex-col mt-4 text-center lg:text-start items-center md:items-start">
             <Link
               href="/nos-services"
               className="mt-8 uppercase w-fit px-8 py-3 bg-secondary text-white rounded-xl font-bold shadow-lg transition duration-300 hover:shadow-xl"
@@ -20,15 +25,18 @@ export const HerobannerContact = () => {
           </div>
         </div>
 
-        <div className="md:flex items-end mr-12 hidden">
+        {/* IMAGE */}
+        <div className="flex opacity-30 z-1 items-end absolute bottom-0 right-0 lg:opacity-100 2xl:relative 2xl:-bottom-24 lg:max-w-[50%] 2xl:max-w-[80%]">
           <Image
             src="/assets/images/cleaning.png"
             alt=""
-            width={700}
+            width={900}
+            quality={100}
             height={0}
-            className="mt-12 max-h-[600px]"
-          ></Image>
+            className="md:max-h-[600px] md:flex hidden"
+          />
         </div>
-      </section>
+      </AnimateContainer>
+    </Section>
   );
 };

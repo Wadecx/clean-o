@@ -9,6 +9,7 @@ type Props = {
   duration?: number;
   className?: string;
   hasLayout?: boolean;
+  inView?: boolean;
 };
 
 const FADE_IN = {
@@ -39,6 +40,7 @@ export const AnimateContainer = ({
   delay = 0,
   animate = 'popIn',
   hasLayout = false,
+  inView = true,
 }: PropsWithChildren<Props>) => {
   const setAnimation = () => {
     switch (animate) {
@@ -56,12 +58,15 @@ export const AnimateContainer = ({
       layout={hasLayout}
       initial="initial"
       variants={setAnimation()}
-      whileInView="animate"
+      whileInView={inView ? 'animate' : 'initial'}
+      animate={!inView ? 'animate' : 'initial'}
       exit="exit"
       viewport={{ once: true }}
       transition={{ ...DEFAULT_TRANSITION.transition, delay, duration }}
+      // @ts-ignore
+      className={className}
     >
-      <div className={className}>{children}</div>
+      {children}
     </motion.div>
   );
 };

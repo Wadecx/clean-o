@@ -1,17 +1,14 @@
 import { AnimateContainer } from '@/animations';
 import { Section } from '@/components';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 export const Herobanner = () => {
   return (
-    <Section size="9/10" className="mt-[150px] md:mt-[50px]">
-      <AnimateContainer
-        delay={0.2}
-        className="flex items-center bg-third rounded-[60px] md:pl-24 py-24 justify-between overflow-hidden relative"
-      >
+    <Section size="9/10" className="mt-[150px] md:mt-[170px]">
+      <AnimateContainer className="flex items-center bg-third rounded-[60px] md:pl-24 py-24 justify-between overflow-hidden relative">
         <div className="flex z-10 flex-col md:items-start md:text-start items-center text-center">
-          <h1 className="uppercase max-w-4xl md:text-4xl text-3xl font-medium text-primary leading-1 items-center">
+          <h1 className="uppercase max-w-4xl md:text-5xl text-3xl 2xl:max-w-3xl lg:max-w-2xl font-medium text-primary leading-1 items-center">
             votre environnement professionnel, notre{' '}
             <span className="text-secondary">priorité absolue.</span>
           </h1>
@@ -30,7 +27,7 @@ export const Herobanner = () => {
               basé sur 137 avis
             </p>
             <Link
-              href="/nos-services"
+              href="/contact"
               className="mt-8 uppercase w-fit px-8 py-3 bg-secondary text-white rounded-xl font-bold shadow-lg transition duration-300 hover:shadow-xl"
             >
               audit gratuit
@@ -38,7 +35,7 @@ export const Herobanner = () => {
           </div>
         </div>
 
-        <div className="flex opacity-40 z-1 items-end absolute bottom-0 right-0 2xl:opacity-100 2xl:relative 2xl:-bottom-24">
+        <div className="flex opacity-30 z-1 items-end absolute bottom-0 right-0 lg:opacity-100 2xl:relative 2xl:-bottom-24 lg:max-w-[60%]">
           <Image
             src="/assets/images/cleaning.png"
             alt=""

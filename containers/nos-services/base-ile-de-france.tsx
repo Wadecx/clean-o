@@ -1,6 +1,6 @@
 import { Section } from "@/components";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from 'next-view-transitions';
 
 export const BaseIleDeFrance = () => {
   return (
@@ -13,7 +13,7 @@ export const BaseIleDeFrance = () => {
           Vous êtes basé en île de france ?
         </h2>
         <p className="text-primary text-lg">Nous sommes à votre service ! </p>
-        <p className="text-primary text-lg max-w-[70%] text-start">
+        <p className="text-primary text-lg lg:max-w-[70%] text-start">
           Chez Clean'o, nous avons à cœur de couvrir l'ensemble de votre région
           pour répondre aux besoins des entreprises, commerces, et copropriétés
           peu importe où vous vous trouvez
@@ -29,7 +29,7 @@ export const BaseIleDeFrance = () => {
         </Link>
       </div>
 
-      <div className="md:mx-0 mx-12">
+      <div className="md:flex hidden md:mx-0 mx-12">
         <Image
           src="/assets/images/services/france.png"
           alt=""

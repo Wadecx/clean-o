@@ -8,20 +8,20 @@ export const Avis = () => {
   return (
     <Section
       size="9/10"
-      className="flex flex-col justify-center text-center mt-24 mb-24"
+      className="flex flex-col justify-center lg:text-center text-start mt-24 mb-24"
     >
       <h2 className="md:text-4xl text-2xl text-primary font-medium md:w-full w-[97%] mx-auto md:mx-0">
         ILS ONT FAIT LE CHOIX DE{" "}
         <span className="text-secondary">L’EXCELLENCE</span> !
       </h2>
       <div className="flex justyfy-between max-w-[90%] mx-auto items-center">
-        <ArrowLeft size={32} className="text-primary relative top-5 mr-8" />
+        <ArrowLeft size={32} className="text-primary relative top-5 mr-8 lg:block hidden" />
         <div className="grid lg:grid-cols-3 gap-10 mt-12">
           {Clients.map((avis, index) => (
             <AnimateContainer
-              className="p-8 bg-third rounded-3xl max-w-[500px] min-h-[300px]"
+              className="p-8 bg-third rounded-3xl max-w-[700px] min-h-[300px] "
               key={index}
-              delay={0.4}
+              delay={avis.delay}
             >
               <div className="flex gap-4 max-w-fit">
                 <Image src={avis.img} width={60} height={0} alt=""></Image>
@@ -39,7 +39,7 @@ export const Avis = () => {
             </AnimateContainer>
           ))}
         </div>
-        <ArrowRight size={32} className="text-primary relative top-5 ml-8" />
+        <ArrowRight size={32} className="text-primary relative top-5 ml-8 lg:block hidden" />
       </div>
     </Section>
   );

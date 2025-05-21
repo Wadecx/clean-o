@@ -1,42 +1,46 @@
-import { AnimateContainer } from '@/animations';
-import { Section } from '@/components';
-import Image from 'next/image';
-import Link from 'next/link';
+import { AnimateContainer } from "@/animations";
+import { Section } from "@/components";
+import Image from "next/image";
+import { Link } from 'next-view-transitions';
 
 export const Locaux = () => {
   return (
-    <Section className="flex items-center gap-12 flex-col 2xl:flex-row">
-      <div className="w-full h-full 2xl:w-2/5">
+    <Section className="flex flex-col lg:flex-row items-center gap-0 lg:gap-20">
+      <div className="w-full lg:w-2/5 flex justify-center">
         <AnimateContainer>
-          <Image
-            src="/assets/images/home/homme_vitre.png"
-            alt=""
-            width={600}
-            height={0}
-          />
+          <div className="relative w-[350px] sm:w-[350px] md:w-[400px] lg:w-[500px] 2xl:w-[600px] h-auto aspect-[3/4]">
+            <Image
+              src="/assets/images/home/homme_vitre.png"
+              alt="Technicien de nettoyage devant une vitre"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </AnimateContainer>
       </div>
-      <div className="flex-1 flex-col text-start">
+
+      <div className="flex-1 flex flex-col text-start">
         <AnimateContainer delay={0.2}>
-          <h2 className="uppercase text-primary md:text-4xl text-2xl font-medium mb-12 mt-4 md:mt-0">
-            DES LOCAUX IMPECCABLES POUR BOOSTER VOTRE{' '}
-            <span className="text-secondary">PRODUCTIVITÉ</span> ! 🚀
+          <h2 className="uppercase text-primary text-2xl md:text-4xl font-medium mb-8 md:mb-12">
+            Des locaux impeccables pour booster votre{" "}
+            <span className="text-secondary">productivité</span> ! 🚀
           </h2>
-          <p className="text-primary text-lg mb-12">
+          <p className="text-primary text-lg mb-6 md:mb-8">
             Vous en avez assez des retards, des prestations peu soignées ou des
-            problème de suvi pour l'entretien de vos locaux ?
+            problèmes de suivi pour l'entretien de vos locaux ?
           </p>
-          <p className="text-primary text-lg mb-12">
+          <p className="text-primary text-lg mb-8">
             Chez Clean'o, nous comprenons vos enjeux. Grâce à nos services de
-            nettoyage personalisés et notre suivi rigoureux, nous garantissons
+            nettoyage personnalisés et notre suivi rigoureux, nous garantissons
             un environnement de travail sain et accueillant, sans effort de
-            votre part
+            votre part.
           </p>
           <Link
             href="/nos-services"
-            className="mt-8 uppercase w-fit px-6 py-4 bg-primary text-white rounded-xl font-bold shadow-lg transition duration-300 hover:shadow-xl"
+            className="uppercase w-fit px-6 py-4 bg-primary text-white rounded-xl font-bold shadow-lg transition duration-300 hover:shadow-xl"
           >
-            découvrez nos prestations
+            Découvrez nos prestations
           </Link>
         </AnimateContainer>
       </div>

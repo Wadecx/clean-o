@@ -1,9 +1,9 @@
-import { Herobanner } from "@/containers/home/herobanner";
 import { BaseIleDeFrance } from "@/containers/nos-services/base-ile-de-france";
 import { Interventions } from "@/containers/home/interventions";
 import { Avis } from "@/containers/home/avis";
-import { Locaux } from "@/containers/home/locaux-impecable";
 import { Metadata } from "next";
+import { HerobannerDecouvrir } from "@/containers/nous-decouvrir/HerobannerDecouvrir";
+import { EquipePassion } from "@/containers/nous-decouvrir/equipe-passion";
 
 export const metadata: Metadata = {
   title: "Nous découvrir",
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-        <Herobanner />
+        <HerobannerDecouvrir />
       <BaseIleDeFrance />
       <Interventions />
       <Avis />
-      <Locaux />
+      <EquipePassion />
     </>
   );
 }

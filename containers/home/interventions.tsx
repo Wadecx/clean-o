@@ -1,66 +1,55 @@
-import { AnimateContainer } from '@/animations';
-import { Section } from '@/components';
-import Image from 'next/image';
+import { AnimateContainer } from "@/animations";
+import { Section } from "@/components";
+import Image from "next/image";
 
 export const Interventions = () => {
   return (
-    <Section className="flex justify-evenly flex-col md:flex-row gap-12 md:gap-0">
-      <AnimateContainer className="flex flex-col gap-4 items-center text-center">
-        <Image
-          src="/assets/images/home/c1.png"
-          alt=""
-          width={120}
-          height={0}
-          className=""
-        ></Image>
-        <h2 className="uppercase text-primary text-center text-xl font-bold">
-          intervention <br /> rapide
-        </h2>
-        <p className="text-primary text-lg font-medium">
-          Urgence prise en
-          <br /> charge sous 24H.
-        </p>
-      </AnimateContainer>
-      <AnimateContainer
-        delay={0.2}
-        className="flex flex-col gap-4 items-center text-center"
-      >
-        <Image
-          src="/assets/images/home/c2.png"
-          alt=""
-          width={120}
-          height={0}
-          className="mt-4"
-        ></Image>
-        <h2 className="uppercase text-primary text-center text-xl font-bold">
-          Expertise <br /> multi-secteur
-        </h2>
-        <p className="text-primary text-lg font-medium">
-          Cabinets médicaux, bureaux
-          <br /> commerces, syndics.
-        </p>
-      </AnimateContainer>
-      <AnimateContainer
-        delay={0.4}
-        className="flex flex-col gap-4 items-center text-center"
-      >
-        <Image
-          src="/assets/images/home/c3.png"
-          alt=""
-          width={120}
-          height={0}
-          className="mt-6"
-        ></Image>
-        <h2 className="uppercase text-primary text-center text-xl font-bold">
-          Engagement <br />
-          écologique
-        </h2>
-        <p className="text-primary text-lg font-medium">
-          Produit respectueux
-          <br />
-          de l'environnement
-        </p>
-      </AnimateContainer>
+    <Section className="flex flex-col md:flex-row justify-evenly gap-12 md:gap-0">
+      {[
+        {
+          src: "/assets/images/home/c1.png",
+          title: "intervention rapide",
+          text: "Urgence prise en\ncharge sous 24H.",
+          delay: 0,
+        },
+        {
+          src: "/assets/images/home/c2.png",
+          title: "expertise multi-secteur",
+          text: "Cabinets médicaux, bureaux\ncommerces, syndics.",
+          delay: 0.2,
+        },
+        {
+          src: "/assets/images/home/c3.png",
+          title: "engagement écologique",
+          text: "Produit respectueux\nde l'environnement",
+          delay: 0.4,
+        },
+      ].map((item, index) => (
+        <AnimateContainer
+          key={index}
+          delay={item.delay}
+          className="flex flex-col items-center text-center gap-4"
+        >
+          <div className="relative h-32 w-32"> 
+            <Image
+              src={item.src}
+              alt={item.title}
+              fill
+              className="object-contain"
+            />
+          </div>
+          <h2 className="text-primary text-xl font-bold uppercase leading-tight">
+            {item.title.split("\n").map((line, i) => (
+              <span key={i} className="block">
+                {line}
+              </span>
+            ))}
+          </h2>
+          <p className="text-primary text-lg font-medium leading-snug whitespace-pre-line">
+            {item.text}
+          </p>
+        </AnimateContainer>
+      ))}
     </Section>
   );
 };
