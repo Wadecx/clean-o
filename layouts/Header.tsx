@@ -50,7 +50,7 @@ const Header = () => {
         animate="visible"
         initial="initial"
         viewport={{ once: true }}
-        //@ts-expect-error framer-motion prevent
+        // @ts-ignore
         className="w-full absolute top-0 hidden lg:block z-50"
       >
         <nav className="max-w-9/10 mx-auto py-8 flex items-center justify-between mt-8">
@@ -126,7 +126,7 @@ const ResponsiveHeader = () => {
       animate="visible"
       initial="initial"
       viewport={{ once: true }}
-      //@ts-expect-error
+      // @ts-ignore
       className="shadow-lg bg-white fixed top-0 w-full z-50 block lg:hidden"
     >
       <nav className="max-w-9/10 mx-auto py-8 flex items-center justify-between">
@@ -137,7 +137,7 @@ const ResponsiveHeader = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
           whileHover={{ scale: 0.9 }}
-          //@ts-expect-error
+          // @ts-ignore
           className="relative z-[999]"
         >
           <Link href="/">
@@ -158,7 +158,7 @@ const ResponsiveHeader = () => {
           initial="initial"
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          //@ts-expect-error
+          // @ts-ignore
           className="relative z-[999]"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -179,7 +179,7 @@ const ResponsiveHeader = () => {
                 animate="visible"
                 exit="exit"
                 transition={{ duration: 0.5, ease: 'easeInOut' }}
-                //@ts-expect-error
+                // @ts-ignore
                 className="fixed top-0 right-0 w-full h-[50vh] z-50 bg-white border-b border-green/70 shadow-sm"
               >
                 <ul className="flex flex-col items-center h-full justify-center gap-4 p-4">
@@ -205,7 +205,7 @@ const ResponsiveHeader = () => {
                     initial="initial"
                     animate="visible"
                     transition={{ delay: 0.8 }}
-                    //@ts-expect-error
+                    // @ts-ignore
                     onClick={() => setIsOpen(false)}
                   >
                     <Button href="/contact">CONTACTEZ-NOUS</Button>
@@ -222,7 +222,7 @@ const ResponsiveHeader = () => {
                 initial="initial"
                 animate="visible"
                 exit="exit"
-                //@ts-expect-error
+                // @ts-ignore
                 className="inset-0 fixed w-full h-screen bg-black/70"
               ></motion.div>
             </>
