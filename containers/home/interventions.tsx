@@ -2,10 +2,8 @@ import { AnimateContainer } from "@/animations";
 import { Section } from "@/components";
 import Image from "next/image";
 
-export const Interventions = () => {
-  return (
-    <Section className="flex flex-col md:flex-row justify-evenly gap-12 md:gap-0">
-      {[
+
+const KEYSTEP = [
         {
           src: "/assets/images/home/c1.png",
           title: "intervention rapide",
@@ -24,7 +22,12 @@ export const Interventions = () => {
           text: "Produit respectueux\nde l'environnement",
           delay: 0.4,
         },
-      ].map((item, index) => (
+      ]
+
+export const Interventions = () => {
+  return (
+    <Section className="flex flex-col md:flex-row justify-evenly gap-12 md:gap-0">
+      {KEYSTEP.map((item, index) => (
         <AnimateContainer
           key={index}
           delay={item.delay}
