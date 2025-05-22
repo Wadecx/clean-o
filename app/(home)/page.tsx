@@ -4,6 +4,7 @@ import { Incontournable } from '@/containers/home/incontournable';
 import { Interventions } from '@/containers/home/interventions';
 import { Locaux } from '@/containers/home/locaux-impecable';
 import { Promesse } from '@/containers/home/promesse';
+import { Questions } from '@/containers/home/Questions';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function HomePage() {
       <Interventions />
       <Locaux />
       <Avis />
-      <Incontournable />
+      <Questions />
       <Promesse />
     </>
   );

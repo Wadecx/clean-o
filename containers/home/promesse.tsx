@@ -5,7 +5,7 @@ import { Link } from 'next-view-transitions';
 
 export const Promesse = () => {
   return (
-  <Section size="9/10" className="flex mx-auto justify-between gap-12 text-start  items-start">
+  <Section size="9/10" className="flex mx-auto justify-between gap-12 text-start  items-start mt-0 md:mt-0">
 
       <AnimateContainer className="md:max-w-1/2 lg:block hidden relative top-20">
         <Image
