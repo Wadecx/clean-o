@@ -47,10 +47,21 @@ const config: Config = {
             transform: 'scale(0.90)',
           },
         },
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
       },
       animation: {
         heart: 'heart 1s ease-in-out infinite',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
+
       maxWidth: {
         '9/10': '90%',
         '8/10': '80%',
