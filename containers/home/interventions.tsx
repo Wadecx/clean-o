@@ -26,7 +26,7 @@ const KEYSTEP = [
 
 export const Interventions = () => {
   return (
-    <Section className="flex flex-col md:flex-row justify-evenly gap-12 md:gap-0">
+    <Section className="flex flex-col md:flex-row justify-evenly gap-12 md:gap-0 lg:mb-14 mb-4">
       {KEYSTEP.map((item, index) => (
         <AnimateContainer
           key={index}

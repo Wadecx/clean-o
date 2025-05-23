@@ -5,7 +5,7 @@ import { Link } from 'next-view-transitions';
 
 export const HerobannerContact = () => {
   return (
-    <Section size="9/10" className="mt-[150px] md:mt-[170px]">
+    <Section size="9/10" className="mt-[150px] md:mt-[170px] mb-[50px] lg:mb-[65px]">
       <AnimateContainer className="flex items-center bg-third rounded-[60px] md:pl-24 py-24 justify-between overflow-hidden relative">
         
         {/* TEXTE */}

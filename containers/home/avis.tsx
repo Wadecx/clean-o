@@ -10,7 +10,7 @@ export const Avis = () => {
       size="9/10"
       className="flex flex-col justify-center lg:text-center text-start mt-24 mb-24"
     >
-      <h2 className="md:text-4xl text-2xl text-primary font-medium md:w-full w-[97%] mx-auto md:mx-0">
+      <h2 className="md:text-4xl text-2xl text-primary font-medium max-w-[90%] lg:max-w-fit mx-auto">
         ILS ONT FAIT LE CHOIX DE{" "}
         <span className="text-secondary">L’EXCELLENCE</span> !
       </h2>

@@ -16,7 +16,7 @@ export const Promesse = () => {
           className="relative top-20"
         ></Image>
       </AnimateContainer>
-      <AnimateContainer className="flex flex-col gap-5 lg:max-w-[50%] mx-auto" delay={0.2}>
+      <AnimateContainer className="flex flex-col gap-5 mx-auto lg:relative top-[150px] max-w-[90%] lg:max-w-fit mx-auto" delay={0.2}>
         <h2 className="uppercase text-primary text-4xl font-medium">
           La promesse clean'o 🙌🏼
         </h2>

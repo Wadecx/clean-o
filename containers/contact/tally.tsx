@@ -20,7 +20,7 @@ export const Tally = () => {
   }, []);
 
   return (
-    <Section className="mt-0 md:mt-0 mb-0 md:mb-0 md:pt-24 pt-0" size="full">
+    <Section className="mt-0 md:mt-0 mb-0 md:mb-0 md:pt-12 pt-0" size="full">
       <div className="max-w-8/10 mx-auto 3xl:max-w-[1400px] rounded-xl p-4 bg-third">
         <iframe
           data-tally-src="https://tally.so/embed/3qv8k8?alignLeft=1&hideTitle=1&dynamicHeight=1&transparentBackground=1"
@@ -28,7 +28,7 @@ export const Tally = () => {
           width="100%"
           height="448"
           title="CONTACT"
-          className=""
+          className="p-8"
         ></iframe>
       </div>
     </Section>

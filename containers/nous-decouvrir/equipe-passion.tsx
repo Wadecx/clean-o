@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const EquipePassion = () => {
   return (
-    <Section className="flex flex-col lg:flex-row items-center gap-0 lg:gap-20">
+    <Section className="flex flex-col lg:flex-row items-center gap-0 lg:gap-20 ">
       <div className="w-full lg:w-2/5 flex justify-center">
         <AnimateContainer>
           <div className="relative w-[350px] sm:w-[350px] md:w-[400px] lg:w-[500px] 2xl:w-[600px] h-auto aspect-[3/4]">
@@ -19,7 +19,7 @@ export const EquipePassion = () => {
         </AnimateContainer>
       </div>
 
-      <div className="flex-1 flex flex-col text-start">
+      <div className="flex-1 flex flex-col text-start max-w-[90%] lg:max-w-fit mx-auto">
         <AnimateContainer delay={0.2}>
           <h2 className="uppercase text-primary text-2xl md:text-4xl font-medium mb-8 md:mb-12">
             une équipe de passionnée proche de vous !
