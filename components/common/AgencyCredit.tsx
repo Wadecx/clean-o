@@ -1,6 +1,6 @@
 export const AgencyCredit = () => {
   return (
-    <p className="max-w-8/10 mx-auto mt-8 font-black">
+    <p className="max-w-8/10 gii font-black text-white">
       Réalisé avec <span className="md:animate-heart inline-block">❤️</span> par{' '}
       <br />
       <a
@@ -8,7 +8,7 @@ export const AgencyCredit = () => {
         target="_blank"
         className="underline underline-offset-4"
       >
-        L'agence Marketingbox
+        VERY BERRY
       </a>
     </p>
   );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Link } from 'next-view-transitions';
+import { AgencyCredit } from "@/components";
 
 const Footer = () => {
   return(
@@ -7,6 +8,7 @@ const Footer = () => {
       <div className="mt-12">
         <Image src="/assets/icons/cleano_footer.png" alt="" width={250} height={120}></Image>
         <p className="text-white mt-4">2025 - Tout droits réservés</p>
+        <AgencyCredit/>
       </div>
       <div className="flex flex-col">
         <h3 className="mb-2 text-white">CLEAN'O</h3>
